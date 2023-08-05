@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box
+        {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            animation: front;
+            animation-duration:5s ;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        @keyframes front{
+            from
+            {
+                left: 0px;
+                background-color: aqua;
+            }
+            to {
+                 left: 400px;
+                background-color: rgb(15, 17, 17);
+
+            }
+
+            0%
+            {
+                left 0px;
+                top: 0px;
+
+            }
+            25%{
+                left: 400px;
+                top: 0;
+            }
+            50%
+            {
+                left: 400px;
+                top: 400px;
+
+            }
+
+            75%{
+
+                top: 400px;
+                left: 0;
+            }
+            100%
+            {
+                left: 0;
+                top: 0;
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>
